@@ -1,0 +1,17 @@
+{
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/policyAssignments/05cac09e-225b-467e-b5b3-28164f839fa0",
+    "name": "KVRoleEnforcement", 
+    "type": "Microsoft.Authorization/policyAssignments",
+    "properties": {
+        "description": "This policy assignment ensures Rbac.",
+        "displayName": "Ensure Rbac",
+        "parameters": {
+            "effect": {
+                "value": "Deny"
+            }
+        },
+        "enforcementMode": "Default",
+        "policyDefinitionId": "/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/policyDefinitions/KVRoleEnforcement",
+        "scope": "/subscriptions/4aa0a432-11bd-465b-8454-270ce1f20b11"
+    }
+}
