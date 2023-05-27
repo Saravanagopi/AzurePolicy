@@ -1,4 +1,5 @@
 {
+    "id": "/subscriptions/4aa0a432-11bd-465b-8454-270ce1f20b11/providers/Microsoft.Authorization/policyDefinitions/KVRoleEnforcement",
     "name": "KVRoleEnforcement",
     "type": "Microsoft.Authorization/policyDefinitions",
     "properties": {
