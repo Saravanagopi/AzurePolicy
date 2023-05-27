@@ -1,4 +1,5 @@
 {
+    "id": "/subscriptions/4aa0a432-11bd-465b-8454-270ce1f20b11/providers/Microsoft.Authorization/policyAssignments/KVRoleEnforcement",
     "name": "KVRoleEnforcement", 
     "type": "Microsoft.Authorization/policyAssignments",
     "properties": {
@@ -10,7 +11,7 @@
             }
         },
         "enforcementMode": "Default",
-        "policyDefinitionId": "/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/policyDefinitions/KVRoleEnforcement",
+        "policyDefinitionId": "/subscriptions/4aa0a432-11bd-465b-8454-270ce1f20b11/providers/Microsoft.Authorization/policyDefinitions/KVRoleEnforcement",
         "scope": "/subscriptions/4aa0a432-11bd-465b-8454-270ce1f20b11"
     }
 }
