@@ -22,7 +22,7 @@ jobs:
         uses: Azure/manage-azure-policy@v0
         with:
           paths: |
-            Definition/*
-            Assignments/*
+            ./Definition/*
+            ./Assignments/*
           assignments: |
             *assign*
