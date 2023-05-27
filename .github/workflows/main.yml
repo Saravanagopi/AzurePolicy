@@ -2,7 +2,7 @@ name: 'Test Policy'
 on:
   push:
     branches: 
-    - "*" 
+    - code
     paths: 
      - 'Policies/**'
      - 'Initiatives/**'
