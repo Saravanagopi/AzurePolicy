@@ -21,8 +21,8 @@ jobs:
       - name: Manage Azure Policy
         uses: Azure/manage-azure-policy@v0
         with:
-          paths: |
-            ./Definition/*
-            ./Assignments/*
+          paths: 
+            ./Definition
+            ./Assignments
           assignments: |
             *assign*
