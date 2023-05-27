@@ -4,8 +4,8 @@ on:
     branches: 
     - code
     paths: 
-     - 'Policies/**'
-     - 'Initiatives/**'
+     - 'Definition/**'
+     - 'Assignments/**'
   workflow_dispatch:
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
         uses: Azure/manage-azure-policy@v0
         with:
           paths: |
-            Policies/*
-            Initiatives/*
+            Definition/*
+            Assignments/*
           assignments: |
-            *test*
+            *assign*
