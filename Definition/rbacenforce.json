@@ -35,10 +35,6 @@
                 {
                     "field": "Microsoft.KeyVault/vaults/enableRbacAuthorization",
                     "equals": "false"
-                },
-                {
-                    "field": "Microsoft.KeyVault/vaults/enableSoftDelete",
-                    "exists": "false"
                 }
                 ]
             }
