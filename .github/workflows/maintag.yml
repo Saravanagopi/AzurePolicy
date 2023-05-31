@@ -13,12 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: azure/login@v1
+      - uses: azure/login@v2
         with:
           creds: ${{ secrets.POLICYSECRET }}
       
       - name: Manage Azure Policy
-        uses: Azure/manage-azure-policy@v1
+        uses: Azure/manage-azure-policy@v0
         with:
           paths: 
             ./Assignments
