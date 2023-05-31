@@ -19,7 +19,7 @@ jobs:
           creds: ${{ secrets.POLICYSECRET }}
       
       - name: Manage Azure Policy
-        uses: Azure/manage-azure-policy@v0
+        uses: Azure/manage-azure-policy@v1
         with:
           paths: 
             ./Definition
