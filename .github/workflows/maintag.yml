@@ -1,0 +1,25 @@
+name: 'Tag Policy'
+on:
+  push:
+    branches: 
+    - code
+    paths: 
+     - 'Definition/**'
+     - 'Assignments/**'
+  workflow_dispatch:
+
+jobs:
+  
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: azure/login@v1
+        with:
+          creds: ${{ secrets.POLICYSECRET }}
+      
+      - name: Manage Azure Policy
+        uses: Azure/manage-azure-policy@v0
+        with:
+          paths: 
+            ./Assignments
