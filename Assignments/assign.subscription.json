@@ -1,28 +1,28 @@
 {
-    "id": "/subscriptions/4aa0a432-11bd-465b-8454-270ce1f20b11/providers/Microsoft.Authorization/policyAssignments/tagsenforces",
-    "name": "tagsenforces", 
-    "type": "Microsoft.Authorization/policyAssignments",
-    "properties": {
-        "description": "This policy assignment ensures tagsenforces.",
-        "displayName": "Ensure tagsenforces",
-        "parameters": {
-            "effect": {
-                "value": "Deny"
-            }
-        },
-        "enforcementMode": "Default",
-        "policyDefinitionId": "/subscriptions/4aa0a432-11bd-465b-8454-270ce1f20b11/providers/Microsoft.Authorization/policyDefinitions/tagsenforces",
-        "scope": "/subscriptions/4aa0a432-11bd-465b-8454-270ce1f20b11",
-        "resourceSelectors": [
-            {
-                "name": "TagsDenied",
-                "selectors": [
-                    {
-                        "kind": "resourceType",
-                        "in": [ "Microsoft.KeyVault/vaults", "Microsoft.KeyVault/vaults/secrets" ]
-                    }
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "resources": [
+        {
+            "type": "Microsoft.Authorization/policyAssignments",
+            "name": "tagsenforces",
+            "apiVersion": "2022-06-01",
+            "properties": {
+                "scope": "/subscriptions/4aa0a432-11bd-465b-8454-270ce1f20b11",
+                "enforcementMode": "Default",
+                "policyDefinitionId": "/subscriptions/4aa0a432-11bd-465b-8454-270ce1f20b11/providers/Microsoft.Authorization/policyDefinitions/tagsenforces",
+                "parameters": "Deny",
+                "resourceSelectors": [
+                {
+                    "name": "TagsDenied",
+                    "selectors": [
+                        {
+                            "kind": "resourceType",
+                            "in": [ "Microsoft.KeyVault/vaults", "Microsoft.KeyVault/vaults/secrets" ]
+                        }
+                    ]
+                 }
                 ]
             }
-        ]
-    }
+        }
+    ]
 }
