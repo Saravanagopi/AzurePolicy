@@ -1,0 +1,54 @@
+{
+  "id": "/subscriptions/4aa0a432-11bd-465b-8454-270ce1f20b11/providers/Microsoft.Authorization/policyDefinitions/KVRoleEnforcement",
+   "name": "KVRoleEnforcement",
+   "type": "Microsoft.Authorization/policyDefinitions",
+  "properties": {
+    "displayName": "kvsecrettagsdeny",
+    "policyType": "Custom",
+    "mode": "Indexed",
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "deny if tag not specified"
+        },
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "anyOf": [
+              {
+                "field": "tags['environment']",
+                "exists": "false"
+              },
+              {
+                "field": "tags['application']",
+                "exists": "false"
+              },
+              {
+                "field": "tags['email']",
+                "exists": "false"
+              },
+              {
+                "field": "tags['email']",
+                "notLike": "*@gopi.com"
+              }
+            ]
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }
+  }
+}
