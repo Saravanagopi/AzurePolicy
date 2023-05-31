@@ -2,7 +2,7 @@
     "id": "/subscriptions/4aa0a432-11bd-465b-8454-270ce1f20b11/providers/Microsoft.Authorization/policyAssignments/tagsenforces",
     "name": "tagsenforces", 
     "type": "Microsoft.Authorization/policyAssignments",
-    "version": "2022-06-01",
+    "api-version": "2022-06-01",
     "properties": {
         "description": "This policy assignment ensures tagsenforces.",
         "displayName": "Ensure tagsenforces",
