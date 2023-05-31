@@ -2,7 +2,6 @@
   "id": "/subscriptions/4aa0a432-11bd-465b-8454-270ce1f20b11/providers/Microsoft.Authorization/policyDefinitions/tagsenforces",
    "name": "tagsenforces",
    "type": "Microsoft.Authorization/policyDefinitions",
-  "apiVersion": "2022-06-01",
   "properties": {
     "displayName": "tagsenforces",
     "policyType": "Custom",
