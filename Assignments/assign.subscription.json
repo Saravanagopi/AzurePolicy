@@ -10,7 +10,7 @@
                 "value": "Deny"
             }
         },
-        "apiVersion": "2022-06-01",
+       
         "enforcementMode": "Default",
         "policyDefinitionId": "/subscriptions/4aa0a432-11bd-465b-8454-270ce1f20b11/providers/Microsoft.Authorization/policyDefinitions/tagsenforces",
         "scope": "/subscriptions/4aa0a432-11bd-465b-8454-270ce1f20b11",
