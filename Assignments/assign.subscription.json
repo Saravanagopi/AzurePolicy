@@ -18,7 +18,7 @@
                 "name": "TagsDenied",
                 "selectors": [
                     {
-                        "kind": "resourceTypes",
+                        "kind": "resourceType",
                         "in": [ "Microsoft.KeyVault/vaults", "Microsoft.KeyVault/vaults/secrets" ]
                     }
                 ]
