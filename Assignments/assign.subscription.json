@@ -1,16 +1,17 @@
 {
-    "name": "KVRoleEnforcement", 
+    "id": "/subscriptions/4aa0a432-11bd-465b-8454-270ce1f20b11/providers/Microsoft.Authorization/policyAssignments/tagsenforces",
+    "name": "tagsenforces", 
     "type": "Microsoft.Authorization/policyAssignments",
     "properties": {
-        "description": "This policy assignment ensures Rbac.",
-        "displayName": "Ensure Rbac",
+        "description": "This policy assignment ensures tagsenforces.",
+        "displayName": "Ensure tagsenforces",
         "parameters": {
             "effect": {
                 "value": "Deny"
             }
         },
         "enforcementMode": "Default",
-        "policyDefinitionId": "/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/policyDefinitions/KVRoleEnforcement",
+        "policyDefinitionId": "/subscriptions/4aa0a432-11bd-465b-8454-270ce1f20b11/providers/Microsoft.Authorization/policyDefinitions/tagsenforces",
         "scope": "/subscriptions/4aa0a432-11bd-465b-8454-270ce1f20b11"
     }
 }
